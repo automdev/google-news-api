@@ -69,7 +69,7 @@ response = requests.get(
     "https://api.autom.dev/v1/google/news",
     headers=HEADERS,
     params={
-        "query": "YOUR_VALUE",
+        "query": "coffee",
     },
     timeout=120,
 )
@@ -109,7 +109,7 @@ type GoogleNewsApi = {
 const headers = { "x-api-key": process.env.AUTOM_API_KEY!, "Content-Type": "application/json" };
 
 const params = new URLSearchParams({
-  "query": "YOUR_VALUE",
+  "query": "coffee",
 });
 
 const response = await fetch(`https://api.autom.dev/v1/google/news?${params}`, { headers });
